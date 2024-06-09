@@ -11,8 +11,8 @@
 ## Usage
 
 ```
+docker exec -it bothelp-test-task-php-1 bash
 composer install
-docker exec -it symfony-docker-php-1 bash
 ./bin/console app:generate-request-events > json.txt
 ```
 
@@ -24,4 +24,4 @@ Run multiple instances of this command:
 
 Send a POST request to the `https://localhost/event/handle` route with the contents of json.txt in the body of the request.
 
-Messages stats can be checked at http://localhost:15672/
+Messages stats can be checked at http://localhost:15672/ (login and password are both "guest")
